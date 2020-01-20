@@ -6,7 +6,7 @@ $(document).ready(function () {
 	$('.part-A, .part-B').removeClass('start');
 	setTimeout(function () {
 		$('.part-C').removeClass('start');
-	}, 600);
+	}, 700);
 
 	$('.scroll').on('scroll', function () {
 		let scroll = $('.scroll').scrollTop();
