@@ -16,8 +16,10 @@ $(document).ready(function () {
 		// $('.nav *').css('opacity', percent);
 		if (percent < 1) {
 			$('.nav').removeClass('done');
+			$('.part-C').removeClass('done');
 		} else {
 			$('.nav').addClass('done');
+			$('.part-C').addClass('done');
 		}
 	});
 });
