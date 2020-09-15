@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css?family=Audiowide|Baloo|Baloo+Bhai|Bebas+Neue|Comfortaa|Concert+One|Fredoka+One|Righteous|Roboto+Mono|Ubuntu+Mono&display=swap');
 
-html, body, .app {
+html, body {
   overflow: hidden;
   margin: 0;
   padding: 0;
@@ -12,6 +12,11 @@ body {
   background-color: black;
   color: white;
   font-family: Roboto Mono;
+  display: flex;
+  overflow-y: scroll;
+  flex-direction: column;
+
+  scroll-snap-type: y proximity;
 }
 
 div, h1, p {
@@ -22,14 +27,6 @@ div, h1, p {
 a, a:visited {
   color: green;
   text-decoration: underline;
-}
-
-.app {
-  display: flex;
-  overflow-y: scroll;
-  flex-direction: column;
-
-  scroll-snap-type: y proximity;
 }
 
 /* ----------App---------- */
@@ -78,24 +75,20 @@ a, a:visited {
 }
 
 /* ----------Projects---------- */
-/* .projects::before {
-  position: absolute;
-  top: 0;
-  left: 0;
+.projects-container {
+	width: 100vw;
+	height: 100vh;
   background-image: url('assets/chevrons.png');
   background-position: center;
   background-size: 100%;
-  background-repeat: no-repeat;
-	content: '';
-	width: 100vw;
-	height: 100vh;
-	opacity: 0.4;
-} */
+	background-repeat: no-repeat;
+}
 
 .projects {
   flex-direction: row;
   margin-left: 100vw;
-  max-width: max-content;
+	max-width: max-content;
+	height: 100vh;
 }
 
 .projects > .item {
@@ -103,31 +96,73 @@ a, a:visited {
   min-width: 100vw;
 }
 
-.projects > .item > a {
+.projects > .item  a > h1 {
   display: block;
   margin: 0 auto;
   padding: 4px 10px;
   width: max-content;
   border-radius: 6px;
-  background-color: green;
+  /* background-color: green; */
+  color: white;
+  text-align: center;
+  text-decoration: none;
+}
+
+.projects > .item > a {
+  display: block;
+  margin: 0 auto;
+  width: min-content;
+  border-radius: 6px;
+  background-color: transparent;
   color: white;
   text-align: center;
   text-decoration: none;
   font-size: 24px;
 }
 
-.projects > .item > img {
+.projects > .item > a > img {
   margin: 30px auto;
-  max-width: 50%;
+  max-width: 50vw;
   border-radius: 6px;
 
   user-select: none;
 }
 
 .projects > .item > p {
-  margin: 20px auto;
+  margin: 0 auto;
   padding: 0 40px;
   width: 70vw;
   text-align: left;
   font-size: 20px;
+}
+
+/* ----------Contact---------- */
+.contact {
+	margin-bottom: 20vh;
+}
+
+.contact .list {
+	display: flex;
+	flex-direction: row;
+	margin-bottom: 10vh;
+	justify-content: center;
+}
+
+.contact .list > a {
+	margin: 0 14px;
+}
+
+.contact .list > a > img {
+	border-radius: 100%;
+	background-color: white;
+	width: 60px;
+	height: 60px;
+	padding: 6px;
+	transition: 200ms ease-out;
+}
+.contact .list > a:hover > img {
+	padding: 12px;
+	margin: -6px;
+	margin-top: -20px;
+	background-color: lightgreen;
 }
