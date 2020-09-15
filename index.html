@@ -7,61 +7,94 @@
 	<title>Vandesm14</title>
 	<link href="style.css" rel="stylesheet" type="text/css" />
 	<link rel="icon" href="fav.png" />
+
+	<!-- Primary Meta Tags -->
+	<meta name="title" content="Vandesm14">
+	<meta name="description" content="Shane Vandegrift, a friendly fullstack developer">
+	<meta name="theme-color" content="#FFFFFFFF">
+
+	<!-- Open Graph / Facebook -->
+	<meta property="og:type" content="website">
+	<meta property="og:url" content="https://vandesm14.ml/">
+	<meta property="og:title" content="Vandesm14">
+	<meta property="og:description" content="Shane Vandegrift, a friendly fullstack developer">
+	<meta property="og:image" content="fav.png">
+
+	<!-- Twitter -->
+	<meta property="twitter:card" content="summary_large_image">
+	<meta property="twitter:url" content="https://vandesm14.ml/">
+	<meta property="twitter:title" content="Vandesm14">
+	<meta property="twitter:description" content="Shane Vandegrift, a friendly fullstack developer">
+	<meta property="twitter:image" content="fav.png">
 </head>
 
 <body>
-	<div class="background"></div>
 	<div class="app">
-		<div class="nav">
-			<div class="nav-section">
-				<img src="fav.png" class="nav-logo">
-				<p class="nav-title">Vandesm14</p>
-			</div>
-			<h3 class="nav-heading">About Me</h3>
+		<div class="main section scroll-snap">
+			<h1>Hi, I'm Shane</h1>
+			<i>A friendly fullstack developer</i>
 		</div>
-		<div class="scroll">
-			<div class="panel">
-				<h3 style="display:none">Home</h3>
-				<div class="animation">
-					<h3 class="part-A start">Shane Vandegrift</h3>
-					<p class="part-A start">(aka Vandesm14)</p>
-					<img class="part-B start" src="photo.png">
-					<img class="part-C start" src="pointer.png">
-				</div>
+		<div class="section scroll-snap">
+			<h1 class="header">About</h1>
+			<p>I am Shane Vandegrift <i>(aka Vandesm14)</i>, an 18 yo. Nodejs full-stack web developer. I enjoy creating
+				useful full-stack applications
+				large and small. Alongside my interest for web development, I have a similar interest in the multimedia field.
+				This includes things like composing music, editing photos, writing articles, and working in the media booth at
+				my church.</p>
+		</div>
+		<div class="section no-mg">
+			<h1 class="header">Projects</h1>
+		</div>
+		<div class="projects section no-mg scroll-snap" id="projects">
+			<div class="item">
+				<a href="https://classaware.org">
+					<h1>Classaware</h1>
+				</a>
+				<img src="assets/classaware.png">
+				<p>
+					A class-countdown system I built for North Penn High School students and staff during my time there. It is
+					still operational and updated to the revised schedules. This site was one of the first "viral" sites I created
+					in my coding career.
+				</p>
 			</div>
-			<div class="panel">
-				<h3>About Me</h3>
-				<p class="panel-content">Nam eget enim felis. Praesent auctor feugiat nisl sit amet euismod. Morbi feugiat ullamcorper purus, ut
-					elementum mauris blandit vitae. Vestibulum bibendum, leo in lobortis dictum, nunc neque finibus sapien,
-					placerat dictum ante urna a tellus. Suspendisse iaculis ipsum vel dolor fringilla sodales. Quisque arcu
-					mauris, malesuada eget elementum at, feugiat in dolor. Proin sed pellentesque turpis, sed maximus nulla.
-					Phasellus placerat eleifend blandit. Cras ac arcu egestas, porttitor justo non, varius sapien. Maecenas et
-					commodo urna, sed gravida eros. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac
-					turpis egestas. In hac habitasse platea dictumst.</p>
+			<div class="item">
+				<a href="https://blog.vandesm14.ml">
+					<h1>Blog</h1>
+				</a>
+				<img src="assets/blog.png">
+				<p>
+					A blog is a very important site to have if you're a developer. It took me a while to create the perfect one.
+					Each time I'd create one, it'd
+					either go silent after a week, or not be enough to suit my needs. My current blog, however, is a combination
+					of trial and error with tons of planning.
+				</p>
 			</div>
-			<div class="panel">
-				<h3>Projects</h3>
-				<p class="panel-content">Nam eget enim felis. Praesent auctor feugiat nisl sit amet euismod. Morbi feugiat ullamcorper purus, ut
-					elementum mauris blandit vitae. Vestibulum bibendum, leo in lobortis dictum, nunc neque finibus sapien,
-					placerat dictum ante urna a tellus. Suspendisse iaculis ipsum vel dolor fringilla sodales. Quisque arcu
-					mauris, malesuada eget elementum at, feugiat in dolor. Proin sed pellentesque turpis, sed maximus nulla.
-					Phasellus placerat eleifend blandit. Cras ac arcu egestas, porttitor justo non, varius sapien. Maecenas et
-					commodo urna, sed gravida eros. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac
-					turpis egestas. In hac habitasse platea dictumst.</p>
-			</div>
-			<div class="panel">
-				<h3>Blog</h3>
-				<p class="panel-content">Nam eget enim felis. Praesent auctor feugiat nisl sit amet euismod. Morbi feugiat ullamcorper purus, ut
-					elementum mauris blandit vitae. Vestibulum bibendum, leo in lobortis dictum, nunc neque finibus sapien,
-					placerat dictum ante urna a tellus. Suspendisse iaculis ipsum vel dolor fringilla sodales. Quisque arcu
-					mauris, malesuada eget elementum at, feugiat in dolor. Proin sed pellentesque turpis, sed maximus nulla.
-					Phasellus placerat eleifend blandit. Cras ac arcu egestas, porttitor justo non, varius sapien. Maecenas et
-					commodo urna, sed gravida eros. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac
-					turpis egestas. In hac habitasse platea dictumst.</p>
+			<div class="item">
+				<a href="https://chat.hyperjs.ml">
+					<h1>LowChat</h1>
+				</a>
+				<img src="assets/lowchat.png">
+				<p>
+					A feature-packed chatting website built with a NodeJS/Express server backend. This site is quite useful as it
+					requires no signup and is fast and easy to use.
+				</p>
 			</div>
 		</div>
+		<div class="section scroll-snap">
+			<h1 class="header">Contact</h1>
+			<p>
+				Need to get into contact with me? Here's a list of the various ways of doing so:<br><br>
+				<a href="https://discord.vandesm14.ml">Discord</a>,
+				<a href="mailto:vandesm14@gmail.com">Email</a>,
+				<a href="https://twitter.com/Vandesm14">Twitter</a>,
+				<a href="https://github.com/Vandesm14">Github</a>,
+				<a href="https://repl.it/@Vandesm14">Repl.it</a>
+			</p>
+		</div>
+		<footer></footer>
 	</div>
-	<script src="jquery.min.js"></script>
+	<script src="lib/jquery.min.js"></script>
+	<script src="lib/jquery.easing.1.3.js"></script>
 	<script src="script.js"></script>
 </body>
 
