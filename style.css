@@ -9,12 +9,12 @@ html, body {
 }
 
 body {
-  background-color: black;
-  color: white;
-  font-family: Roboto Mono;
   display: flex;
   overflow-y: scroll;
   flex-direction: column;
+  background-color: black;
+  color: white;
+  font-family: Roboto Mono;
 
   scroll-snap-type: y proximity;
 }
@@ -84,21 +84,21 @@ a, a:visited {
 
 /* ----------Projects---------- */
 .projects-container {
-	width: 100vw;
-	height: 100vh;
+  display: flex;
+  flex-direction: row;
+  width: 100vw;
+  height: 100vh;
   background-image: url('assets/chevrons.png');
   background-position: center;
   background-size: 100%;
-	background-repeat: no-repeat;
-	display: flex;
-	flex-direction: row;
+  background-repeat: no-repeat;
 }
 
 .projects {
-	flex-direction: row;
+  flex-direction: row;
   margin-left: 150vw;
-	max-width: max-content;
-	height: 100vh;
+  max-width: max-content;
+  height: 100vh;
 }
 
 .projects > .item {
@@ -112,7 +112,8 @@ a, a:visited {
   padding: 4px 10px;
   width: max-content;
   border-radius: 6px;
-  /* background-color: green; */
+
+/* background-color: green; */
   color: white;
   text-align: center;
   text-decoration: none;
@@ -148,31 +149,31 @@ a, a:visited {
 
 /* ----------Contact---------- */
 .contact {
-	margin-bottom: 20vh;
+  margin-bottom: 20vh;
 }
 
 .contact .list {
-	display: flex;
-	flex-direction: row;
-	margin-bottom: 10vh;
-	justify-content: center;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin-bottom: 10vh;
 }
 
 .contact .list > a {
-	margin: 0 14px;
+  margin: 0 14px;
 }
 
 .contact .list > a > img {
-	border-radius: 100%;
-	background-color: white;
-	width: 60px;
-	height: 60px;
-	padding: 6px;
-	transition: 200ms ease-out;
+  padding: 6px;
+  width: 60px;
+  height: 60px;
+  border-radius: 100%;
+  background-color: white;
+  transition: 200ms ease-out;
 }
 .contact .list > a:hover > img {
-	padding: 12px;
-	margin: -6px;
-	margin-top: -20px;
-	background-color: lightgreen;
+  margin: -6px;
+  margin-top: -20px;
+  padding: 12px;
+  background-color: lightgreen;
 }

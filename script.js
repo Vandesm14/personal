@@ -1,7 +1,7 @@
 let slide = 0;
 
 $(document).ready(function () {
-	$('#age').text(new Date.getFullYear() - 2002);
+	$('#age').text(new Date().getFullYear() - 2002);
 
 	$('#projects-container').on('mousedown', function (e) {
 		e.preventDefault();
