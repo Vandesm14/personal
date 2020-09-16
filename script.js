@@ -1,6 +1,8 @@
 let slide = 0;
 
 $(document).ready(function () {
+	$('#age').text(new Date.getFullYear() - 2002);
+
 	$('#projects-container').on('mousedown', function (e) {
 		e.preventDefault();
 		let x = e.clientX;
@@ -27,12 +29,13 @@ $(document).ready(function () {
 });
 
 function move(by) {
+	let size = -50+50*$('#projects').children().length;
 	if (by === 1) {
 		if (slide < $('#projects').children().length - 1) {
 			slide++;
 			$('#projects').stop(true, true);
 			$('#projects').animate({
-				marginLeft: `${-slide*100+100}vw`
+				marginLeft: `${-slide*100+size}vw`
 			}, {duration: 500, easing: 'easeInOutQuad'});
 		}
 	} else if (by === -1) {
@@ -40,7 +43,7 @@ function move(by) {
 			slide--;
 			$('#projects').stop(true, true);
 			$('#projects').animate({
-				marginLeft: `${-slide*100+100}vw`
+				marginLeft: `${-slide*100+size}vw`
 			}, {duration: 500, easing: 'easeInOutQuad'});
 		}
 	}

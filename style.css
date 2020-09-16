@@ -64,6 +64,14 @@ a, a:visited {
   margin-bottom: 20px;
 }
 
+.section > img {
+  margin: 30px auto;
+  max-width: 30vw;
+  border-radius: 14px;
+
+  user-select: none;
+}
+
 .section > h1.header {
   /* margin: 0 auto; */
   margin-bottom: 40px;
@@ -82,11 +90,13 @@ a, a:visited {
   background-position: center;
   background-size: 100%;
 	background-repeat: no-repeat;
+	display: flex;
+	flex-direction: row;
 }
 
 .projects {
-  flex-direction: row;
-  margin-left: 100vw;
+	flex-direction: row;
+  margin-left: 150vw;
 	max-width: max-content;
 	height: 100vh;
 }
