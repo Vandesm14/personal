@@ -155,6 +155,7 @@ a, a:visited {
 .contact .list {
   display: flex;
   flex-direction: row;
+  flex-wrap: wrap;
   justify-content: center;
   margin-bottom: 10vh;
 }
@@ -176,4 +177,20 @@ a, a:visited {
   margin-top: -20px;
   padding: 12px;
   background-color: lightgreen;
+}
+
+@media only screen and (max-device-width : 640px) {
+  .projects > .item > p {
+    width: 60vw;
+    font-size: 110%;
+  }
+
+  .section {
+    font-size: 110%;
+  }
+
+  .contact .list > a > img {
+    width: 30px;
+    height: 30px;
+  }
 }
