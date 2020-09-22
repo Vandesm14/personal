@@ -16,7 +16,7 @@ body {
   color: white;
   font-family: Roboto Mono;
 
-  scroll-snap-type: y proximity;
+  /* scroll-snap-type: y proximity; */
 }
 
 div, h1, p {
@@ -149,7 +149,7 @@ a, a:visited {
 
 /* ----------Contact---------- */
 .contact {
-  margin-bottom: 20vh;
+  margin-bottom: 0;
 }
 
 .contact .list {
